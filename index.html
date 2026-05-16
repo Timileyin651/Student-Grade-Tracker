@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Grade Tracker</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <section>
+      <h1>Student Grade Tracker</h1>
+      <form id="gradeForm">
+        <div class="entry1">
+          <label for="studentName">Student Name:</label>
+          <input type="text" id="studentName" name="studentName" />
+          <small id="nameError"></small>
+        </div>
+        <div class="entry2">
+          <label for="grade">Grade:</label>
+          <input type="number" id="grade" name="grade" min="0" max="100" />
+          <small id="gradeError"></small>
+        </div>
+        <button type="submit" id="btn">Add Grade</button>
+      </form>
+      <div id="gradesList"></div>
+    </section>
+    <section>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Student Name</th>
+            <th>Grade</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h3>Average Grade</h3>
+      <span id="averageGrade"></span>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>

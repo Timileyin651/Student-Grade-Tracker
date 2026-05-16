@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    color: tomato;
+}
+
+.pass{
+    background-color: green;
+}
+
+.error{
+    color: red;
+
+}
+
+#gradeForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+#btn{
+    width: 10%;
+}
+
+#btn:hover, #delete:hover{
+    background-color: tomato;
+    color: white;
+}
+
+
+
