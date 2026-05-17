@@ -7,7 +7,7 @@ const form = document.getElementById("gradeForm");
 
 //to submit the form
 form.addEventListener("submit", function (event) {
-  preventDefault();
+  event.preventDefault();
   const isValid = validateSubmission(name, grade);
   if (isValid) {
     addStudent(name.value, grade.value);
